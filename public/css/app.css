@@ -11,6 +11,28 @@ body{
   background-color: #fbe0be;
 }
 
+body:before {
+  z-index: -1;
+  content: '';
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  display: block;
+  width: 100%;
+  border-radius: 0%;
+  background-image:
+  radial-gradient(circle at top left,
+       rgba(212,235,235,1), rgba(155,179,208,.3) 70.71%),
+  radial-gradient(circle at top right,
+        rgba(83,98,127,1), rgba(155,179,208,.3) 70.71%),
+  radial-gradient(circle at bottom right,
+       rgba(122,97,70,1), rgba(251,224,190,.7) 70.71%),
+  radial-gradient(circle at bottom left,
+       rgba(122,97,70,1), rgba(251,224,190,.7) 70.71%)
+}
+
 h1 {
   color: black;
   font-size: 40px;
