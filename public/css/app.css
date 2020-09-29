@@ -1,5 +1,7 @@
 /* Import Cabin for Main Header */
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+/* Import Font-Awesome */
+@import url('font-awesome.min.css');
 
 /* Import Cabin for Main Header */
 
@@ -85,8 +87,15 @@ a{
 
 .item-footer{
   padding-top: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 5px;
   background: #fff;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.item-date{
+  font-size: 14px;
+  color: #999999;
 }

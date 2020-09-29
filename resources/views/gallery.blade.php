@@ -49,18 +49,42 @@
                 <img class="item-img" src="images/landscape1.jpeg">
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <span class="item-date">2020-01-01</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="gallery-item col-xs-12 col-sm-4">
                 <img class="item-img" src="images/landscape2.jpeg">
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <span class="item-date">2020-01-01</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="gallery-item col-xs-12 col-sm-4">
                 <img class="item-img" src="images/landscape3.jpeg">
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <span class="item-date">2020-01-01</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -72,18 +96,42 @@
                 <img class="item-img" src="images/landscape4.jpeg">
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <span class="item-date">2020-01-01</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="gallery-item col-xs-12 col-sm-4">
                 <img class="item-img" src="images/landscape5.jpeg">
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <span class="item-date">2020-01-01</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="gallery-item col-xs-12 col-sm-4">
                 <img class="item-img" src="images/landscape6.jpeg">
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <span class="item-date">2020-01-01</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
