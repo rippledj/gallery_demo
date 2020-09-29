@@ -30,7 +30,7 @@ a{
 
 .headmat{
   background-color: #fff;
-  margin-top: 200px;
+  margin-top: 50px;
   border-radius: 7px;
   z-index:2;
 
@@ -93,6 +93,12 @@ a{
   background: #fff;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.item-title{
+  font-size: 30px;
+  color: #fff;
+
 }
 
 .item-date{
