@@ -85,6 +85,18 @@ a{
   filter: contrast(1.3);
 }
 
+.item-img-div{
+  position: relative;
+}
+
+.item-title{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+
 .item-footer{
   padding-top: 5px;
   padding-left: 30px;
@@ -96,8 +108,7 @@ a{
 }
 
 .item-title{
-  font-size: 30px;
-  color: #fff;
+
 
 }
 

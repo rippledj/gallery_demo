@@ -46,7 +46,10 @@
           <div class="row gallery">
 
               <div class="gallery-item col-xs-12 col-sm-4">
-                <img class="item-img" src="images/landscape1.jpeg">
+                <div class="item-img-div">
+                  <img class="item-img" src="images/landscape1.jpeg">
+                  <span class="item-title">Item Title</span>
+                </div>
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
@@ -60,7 +63,10 @@
                 </div>
               </div>
               <div class="gallery-item col-xs-12 col-sm-4">
-                <img class="item-img" src="images/landscape2.jpeg">
+                <div class="item-img-div">
+                  <img class="item-img" src="images/landscape2.jpeg">
+                  <span class="item-title">Item Title</span>
+                </div>
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
@@ -74,7 +80,10 @@
                 </div>
               </div>
               <div class="gallery-item col-xs-12 col-sm-4">
-                <img class="item-img" src="images/landscape3.jpeg">
+                <div class="item-img-div">
+                  <img class="item-img" src="images/landscape3.jpeg">
+                  <span class="item-title">Item Title</span>
+                </div>
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
@@ -93,7 +102,10 @@
           <div class="row gallery">
 
               <div class="gallery-item col-xs-12 col-sm-4">
-                <img class="item-img" src="images/landscape4.jpeg">
+                <div class="item-img-div">
+                  <img class="item-img" src="images/landscape4.jpeg">
+                  <span class="item-title">Item Title</span>
+                </div>
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
@@ -107,7 +119,10 @@
                 </div>
               </div>
               <div class="gallery-item col-xs-12 col-sm-4">
-                <img class="item-img" src="images/landscape5.jpeg">
+                <div class="item-img-div">
+                  <img class="item-img" src="images/landscape5.jpeg">
+                  <span class="item-title">Item Title</span>
+                </div>
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
@@ -121,7 +136,10 @@
                 </div>
               </div>
               <div class="gallery-item col-xs-12 col-sm-4">
-                <img class="item-img" src="images/landscape6.jpeg">
+                <div class="item-img-div">
+                  <img class="item-img" src="images/landscape6.jpeg">
+                  <span class="item-title">Item Title</span>
+                </div>
                 <div class="item-footer">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
