@@ -23,30 +23,72 @@
 
         <!-- User Headmat -->
         <div class="row headmat">
-            <div class="col-xs-3">
-              <img class="user-avatar" src="images/profile.jpeg">
-            </div>
-            <div class="col-xs-6">
-              <h1>Nick Reynolds</h1>
-              <h2>Bio</h2>
-              <p class="user-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque. Nulla ornare vulputate ligula in tempus. Nunc pellentesque nibh a ex eleifend pulvinar. Quisque bibendum ipsum ut mauris malesuada, sit amet mollis turpis viverra.<p>
-            </div>
-            <div class="col-xs-3">
-              <div class="contact">
-                <h2>Phone</h2>
-                <a href="tel:555-555-5555">555-555-5555</a>
-                <h2>Email</h2>
-                <a href="mailto:nick.reynolds@domain.ca">nick.reynolds@domain.ca</a>
-              </div>
+          <div class="col-xs-3">
+            <img class="user-avatar" src="images/profile.jpeg">
+          </div>
+          <div class="col-xs-6">
+            <h1>Nick Reynolds</h1>
+            <h2>Bio</h2>
+            <p class="user-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque. Nulla ornare vulputate ligula in tempus. Nunc pellentesque nibh a ex eleifend pulvinar. Quisque bibendum ipsum ut mauris malesuada, sit amet mollis turpis viverra.<p>
+          </div>
+          <div class="col-xs-3">
+            <div class="contact">
+              <h2>Phone</h2>
+              <a href="tel:555-555-5555">555-555-5555</a>
+              <h2>Email</h2>
+              <a href="mailto:nick.reynolds@domain.ca">nick.reynolds@domain.ca</a>
             </div>
           </div>
         </div>
 
-        <div class="gallery col-xs-12">
+        <div class="gallery-wrapper">
 
+          <div class="row gallery">
+
+              <div class="gallery-item col-xs-12 col-sm-4">
+                <img class="item-img" src="images/landscape1.jpeg">
+                <div class="item-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                </div>
+              </div>
+              <div class="gallery-item col-xs-12 col-sm-4">
+                <img class="item-img" src="images/landscape2.jpeg">
+                <div class="item-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                </div>
+              </div>
+              <div class="gallery-item col-xs-12 col-sm-4">
+                <img class="item-img" src="images/landscape3.jpeg">
+                <div class="item-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="row gallery">
+
+              <div class="gallery-item col-xs-12 col-sm-4">
+                <img class="item-img" src="images/landscape4.jpeg">
+                <div class="item-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                </div>
+              </div>
+              <div class="gallery-item col-xs-12 col-sm-4">
+                <img class="item-img" src="images/landscape5.jpeg">
+                <div class="item-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                </div>
+              </div>
+              <div class="gallery-item col-xs-12 col-sm-4">
+                <img class="item-img" src="images/landscape6.jpeg">
+                <div class="item-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
+                </div>
+              </div>
+
+          </div>
 
         </div>
-      </div>
-
     </body>
 </html>
