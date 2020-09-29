@@ -51,7 +51,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
                     <div class="col-xs-6">
-                      <i class="fa fa-heart"></i>
+                      <i class="fa fa-heart icon"></i>
                     </div>
                     <div class="col-xs-6 text-right">
                       <span class="item-date">2020-01-01</span>
@@ -65,7 +65,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
                     <div class="col-xs-6">
-                      <i class="fa fa-heart"></i>
+                      <i class="fa fa-heart icon"></i>
                     </div>
                     <div class="col-xs-6 text-right">
                       <span class="item-date">2020-01-01</span>
@@ -79,7 +79,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
                     <div class="col-xs-6">
-                      <i class="fa fa-heart"></i>
+                      <i class="fa fa-heart icon"></i>
                     </div>
                     <div class="col-xs-6 text-right">
                       <span class="item-date">2020-01-01</span>
@@ -98,7 +98,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
                     <div class="col-xs-6">
-                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-heart icon"></i>
                     </div>
                     <div class="col-xs-6 text-right">
                       <span class="item-date">2020-01-01</span>
@@ -112,7 +112,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
                     <div class="col-xs-6">
-                      <i class="fa fa-heart"></i>
+                      <i class="fa fa-heart icon"></i>
                     </div>
                     <div class="col-xs-6 text-right">
                       <span class="item-date">2020-01-01</span>
@@ -126,7 +126,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
                   <div class="row">
                     <div class="col-xs-6">
-                      <i class="fa fa-heart"></i>
+                      <i class="fa fa-heart icon"></i>
                     </div>
                     <div class="col-xs-6 text-right">
                       <span class="item-date">2020-01-01</span>

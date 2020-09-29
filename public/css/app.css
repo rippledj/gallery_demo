@@ -89,7 +89,7 @@ a{
   padding-top: 5px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 5px;
+  padding-bottom: 30px;
   background: #fff;
   text-align: justify;
   text-justify: inter-word;
@@ -98,4 +98,9 @@ a{
 .item-date{
   font-size: 14px;
   color: #999999;
+}
+
+.icon{
+  color: #c9281c;
+  font-size: 24px;
 }
