@@ -34,7 +34,9 @@ function modifyPhotosDOM(content){
     // Append the image title
     var title = document.createElement("span");
     title.className = "item-title";
+    title.id = "item-title-" + index;
     title.innerHTML= content[index].title;
+    alert(content[index].title);
     img_div.appendChild(title);
     // Append the item footer
     var footer = document.createElement("div");
@@ -84,8 +86,10 @@ function modifyUserDOM(content){
   bio.innerHTML = content.bio;
   var phone = document.getElementById("phone");
   phone.innerHTML = content.phone;
+  phone.setAttribute("href", "tel:" + content.phone);
   var email = document.getElementById("email");
   email.innerHTML = content.email;
+  email.setAttribute("href", "mailto:" + content.email);
   var avatar = document.getElementById("avatar");
   avatar.src = "http://localhost/" + content.avatar;
 }
@@ -114,7 +118,7 @@ ajax("api/user")
 })
 .catch(function() {
   // An error occurred
-  alert("Error!")
+  alert("User Error!")
 });
 
 // Call the photo gallery API and wait for response
@@ -128,5 +132,5 @@ ajax("api/gallery")
 })
 .catch(function() {
   // An error occurred
-  alert("Error!")
+  alert("Gallery Error!")
 });

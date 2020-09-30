@@ -27,7 +27,6 @@ Route::get("/user", function(){
 Route::get("/gallery", function(){
   $results = DB::select('select * from photos where user_id = :user_id', ['user_id' => 1]);
   $results = base64_encode(json_encode($results));
-  file_put_contents(__DIR__ . "/../resources/demo_files/response.json", $results);
   return $results;
 
 });

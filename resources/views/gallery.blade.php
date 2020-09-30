@@ -35,9 +35,9 @@
           <div id="contact" class="col-xs-3">
             <div class="contact">
               <h2>Phone</h2>
-              <a id="phone" href="tel:555-555-5555"></a>
+              <a id="phone" href=""></a>
               <h2>Email</h2>
-              <a id="email"href="mailto:nick.reynolds@domain.ca"></a>
+              <a id="email"href=""></a>
             </div>
           </div>
         </div>

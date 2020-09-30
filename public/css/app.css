@@ -119,6 +119,7 @@ a{
   left: 10px;
   font-size: 25px;
   color: #fff;
+  z-index: 2;
 }
 
 .item-footer{
@@ -129,11 +130,6 @@ a{
   background: #fff;
   text-align: justify;
   text-justify: inter-word;
-}
-
-.item-title{
-
-
 }
 
 .item-date{
