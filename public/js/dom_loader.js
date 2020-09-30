@@ -36,7 +36,6 @@ function modifyPhotosDOM(content){
     title.className = "item-title";
     title.id = "item-title-" + index;
     title.innerHTML= content[index].title;
-    alert(content[index].title);
     img_div.appendChild(title);
     // Append the item footer
     var footer = document.createElement("div");
