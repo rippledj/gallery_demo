@@ -9,7 +9,7 @@ print_r($json);
 // Declare database connection vars
 $servername = 'localhost';
 $username = 'root';
-$password = 'XOjRD*P8ymp0^r!%zrHzkcR%NyXGFE^rbYDn8QMP2w3eR@6hwNEXU17gOI5i';
+$password = 'password';
 $dbname = 'gallery';
 
 // Create connection
@@ -28,7 +28,7 @@ $sql = "
 
 // Handle errors
 if (mysqli_query($conn, $sql)) {
-   echo "New record created successfully";
+   echo "New record created successfully<br>";
    $last_id = $conn->insert_id;
 } else {
    echo "Error: " . $sql . "" . mysqli_error($conn);
@@ -49,7 +49,7 @@ foreach($json->album as $photo){
 
   // Handle errors
   if (mysqli_query($conn, $sql)) {
-     echo "New record created successfully";
+     echo "New record created successfully<br>";
   } else {
      echo "Error: " . $sql . "" . mysqli_error($conn);
   }

@@ -9,6 +9,8 @@ body{
   width: 100%;
   font-family: 'Cabin', sans-serif;
   background-color: #fbe0be;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body:before {

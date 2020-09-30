@@ -11,7 +11,8 @@
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <!-- Latest compiled and minified JavaScript -->
+        <!-- Latest compiled and minified JQuery and Bootstrap.js -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <!-- Styles -->
 	      <link rel="stylesheet" href="css/app.css" />
@@ -41,120 +42,79 @@
           </div>
         </div>
 
-        <div class="gallery-wrapper">
-
-          <div class="row gallery">
-
-              <div class="gallery-item col-xs-12 col-sm-4">
-                <div class="item-img-div">
-                  <img class="item-img" src="images/landscape1.jpeg">
-                  <span class="item-title">Item Title</span>
-                </div>
-                <div class="item-footer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <i class="fa fa-heart icon"></i>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span class="item-date">2020-01-01</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="gallery-item col-xs-12 col-sm-4">
-                <div class="item-img-div">
-                  <img class="item-img" src="images/landscape2.jpeg">
-                  <span class="item-title">Item Title</span>
-                </div>
-                <div class="item-footer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <i class="fa fa-heart icon"></i>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span class="item-date">2020-01-01</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="gallery-item col-xs-12 col-sm-4">
-                <div class="item-img-div">
-                  <img class="item-img" src="images/landscape3.jpeg">
-                  <span class="item-title">Item Title</span>
-                </div>
-                <div class="item-footer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <i class="fa fa-heart icon"></i>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span class="item-date">2020-01-01</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-
-          <div class="row gallery">
-
-              <div class="gallery-item col-xs-12 col-sm-4">
-                <div class="item-img-div">
-                  <img class="item-img" src="images/landscape4.jpeg">
-                  <span class="item-title">Item Title</span>
-                </div>
-                <div class="item-footer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <i class="fa fa-heart icon"></i>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span class="item-date">2020-01-01</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="gallery-item col-xs-12 col-sm-4">
-                <div class="item-img-div">
-                  <img class="item-img" src="images/landscape5.jpeg">
-                  <span class="item-title">Item Title</span>
-                </div>
-                <div class="item-footer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <i class="fa fa-heart icon"></i>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span class="item-date">2020-01-01</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="gallery-item col-xs-12 col-sm-4">
-                <div class="item-img-div">
-                  <img class="item-img" src="images/landscape6.jpeg">
-                  <span class="item-title">Item Title</span>
-                </div>
-                <div class="item-footer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque.</p>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <i class="fa fa-heart icon"></i>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span class="item-date">2020-01-01</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-
+        <!-- Photo gallery wrapper div -->
+        <div id="gallery-wrapper" class="gallery-wrapper">
         </div>
+
+      </div>
+      <script>
+
+        // Accepts the response array and modifies the content
+        // in the DOM
+        function modifyPhotosDOM(content){
+          num_photos = content.length;
+          num_rows = Math.ceil(num_photos / 3);
+          // Create required number of rows
+          for (var x = 0; x < num_rows; x++){
+            var row = document.createElement("div");
+            row.className = "row gallery";
+            row.id = "gallery-row-" + x;
+            var elem = document.getElementById("gallery-wrapper");
+            elem.appendChild(row);
+          };
+          // Put each item div in place
+          x_col = 1;
+          x_row = 0;
+          for(index in content) {
+            var col = document.createElement("div");
+            col.className = "gallery-item col-xs-12 col-sm-4";
+            col.id = "gallery-item-" + x_col;
+            var row = document.getElementById("gallery-row-" + x_row);
+            //var p = document.createElement("p");
+            col.innerHTML = content[index].title;
+            row.appendChild(col);
+            if (x_col % 3 == 0){
+              x_row++;
+              x_col++;
+            }
+            else x_col++;
+          }
+        }
+
+        // Accepts the response array and modifies the content
+        // in the DOM
+        function modifyUserDOM(content){
+          for(item in content){
+          }
+        }
+
+        // Makes Asyncronous call to API
+        function ajax(url) {
+        return new Promise(function(resolve, reject) {
+          var xhr = new XMLHttpRequest();
+          xhr.onload = function() {
+            resolve(this.responseText);
+          };
+          xhr.onerror = reject;
+          xhr.open('GET', url);
+          xhr.send();
+          });
+        }
+
+        // Call the photo gallery API and wait for response
+        ajax("api/gallery")
+        .then(function(response) {
+          // Decode JSON response
+          // Decode the lesson base64 and JSON
+          var content = JSON.parse(response);
+          // Code depending on result
+          modifyPhotosDOM(content);
+        })
+        .catch(function() {
+          // An error occurred
+          alert("Error!")
+        });
+      </script>
+
     </body>
 </html>
