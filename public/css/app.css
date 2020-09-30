@@ -24,13 +24,13 @@ body:before {
   border-radius: 0%;
   background-image:
   radial-gradient(circle at top left,
-       rgba(212,235,235,1), rgba(155,179,208,.3) 70.71%),
+      rgba(212,235,235,1), rgba(155,179,208,.05) 70.71%),
   radial-gradient(circle at top right,
-        rgba(83,98,127,1), rgba(155,179,208,.3) 70.71%),
-  radial-gradient(circle at bottom right,
-       rgba(122,97,70,1), rgba(251,224,190,.7) 70.71%),
+      rgba(83,98,127,1), rgba(155,179,208,.05) 70.71%),
+  radial-gradient(circle at bottom center,
+      rgba(102,51,0,1), rgba(180,90,0,.3) 70.71%),
   radial-gradient(circle at bottom left,
-       rgba(122,97,70,1), rgba(251,224,190,.7) 70.71%)
+      rgba(102,51,0,1), rgba(180,90,0,.3) 70.71%)
 }
 
 h1 {
