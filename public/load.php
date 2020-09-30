@@ -24,7 +24,7 @@ if ($conn->connect_error) {
 $sql = "
   INSERT INTO user_data
   (`name`, `phone`, `email`, `bio`, `avatar`)
-  VALUES ('".$json->name."','".$json->phone."','".$json->email."','".$json->bio."','".$json->avatar."')";
+  VALUES ('".$json->name."','".$json->phone."','".$json->email."','".$json->bio."','".$json->profile_picture."')";
 
 // Handle errors
 if (mysqli_query($conn, $sql)) {

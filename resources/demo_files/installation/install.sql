@@ -32,7 +32,7 @@ CREATE TABLE `photos` (
   `user_id` int(11) NOT NULL COMMENT 'the user id of the photo owner',
   `title` TEXT COLLATE UTF8mb4_unicode_ci DEFAULT NULL COMMENT 'the photo title',
   `description` TEXT COLLATE UTF8mb4_unicode_ci DEFAULT NULL COMMENT 'the photo description',
-  `img_filepath` varchar(20) COLLATE UTF8mb4_unicode_ci DEFAULT NULL COMMENT 'the photo filepath',
+  `img_filepath` varchar(50) COLLATE UTF8mb4_unicode_ci DEFAULT NULL COMMENT 'the photo filepath',
   `date` date COLLATE UTF8mb4_unicode_ci DEFAULT NULL COMMENT 'date of the photo',
   `featured` tinyint(1) COLLATE UTF8mb4_unicode_ci DEFAULT NULL COMMENT 'boolean if the photo is featured',
   PRIMARY KEY (`photo_id`)
