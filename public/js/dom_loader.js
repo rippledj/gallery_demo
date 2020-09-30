@@ -26,17 +26,17 @@ function modifyPhotosDOM(content){
     img_div.className = "item-img-div";
     img_div.id = "item-img-div-" + index;
     item.appendChild(img_div);
-    // Append the image
-    var img = document.createElement("img");
-    img.className = "item-img";
-    img.src = "http://localhost/" + content[index].img_filepath;
-    img_div.appendChild(img);
     // Append the image title
     var title = document.createElement("span");
     title.className = "item-title";
     title.id = "item-title-" + index;
     title.innerHTML= content[index].title;
     img_div.appendChild(title);
+    // Append the image
+    var img = document.createElement("img");
+    img.className = "item-img";
+    img.src = "http://localhost/" + content[index].img_filepath;
+    img_div.appendChild(img);
     // Append the item footer
     var footer = document.createElement("div");
     footer.className = "item-footer";
@@ -62,7 +62,7 @@ function modifyPhotosDOM(content){
     date.innerHTML = content[index].date;
     sub_footer_col2.appendChild(date);
     // Append the two columns to main row
-    img_div.appendChild(footer);
+    item.appendChild(footer);
     footer.appendChild(sub_footer);
     sub_footer.appendChild(sub_footer_col1);
     sub_footer.appendChild(sub_footer_col2);
