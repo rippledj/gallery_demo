@@ -17,15 +17,15 @@ function modifyPhotosDOM(content){
   x_row = 0;
   for(index in content) {
     // Create the item div
-    var col = document.createElement("div");
-    col.className = "gallery-item col-xs-12 col-sm-4";
-    col.id = "gallery-item-" + x_col;
+    var item = document.createElement("div");
+    item.className = "gallery-item col-xs-12 col-sm-4";
+    item.id = "gallery-item-" + x_col;
     var row = document.getElementById("gallery-row-" + x_row);
     // Append the image div
     var img_div = document.createElement("div");
     img_div.className = "item-img-div";
     img_div.id = "item-img-div-" + index;
-    col.appendChild(img_div);
+    item.appendChild(img_div);
     // Append the image
     var img = document.createElement("img");
     img.className = "item-img";
@@ -43,10 +43,11 @@ function modifyPhotosDOM(content){
     desc = document.createElement("p");
     desc.innerHTML = content[index].description;
     footer.appendChild(desc);
-    // Append sub-footer
+    // Append sub footer
     sub_footer = document.createElement("div");
     sub_footer.className = "row";
     sub_footer_col1 = document.createElement("div");
+    // Append columns to sub footer
     sub_footer_col1.className = "col-xs-6";
     sub_footer_col2 = document.createElement("div");
     sub_footer_col2.className = "col-xs-6";
@@ -56,15 +57,16 @@ function modifyPhotosDOM(content){
     sub_footer_col1.appendChild(like);
     // Append date
     date = document.createElement("span");
-    date.className = "item-date";
+    date.className = "item-date pull-right";
     date.innerHTML = content[index].date;
     sub_footer_col2.appendChild(date);
     // Append the two columns to main row
     img_div.appendChild(footer);
+    footer.appendChild(sub_footer);
     sub_footer.appendChild(sub_footer_col1);
     sub_footer.appendChild(sub_footer_col2);
     // Append the item to the row
-    row.appendChild(col);
+    row.appendChild(item);
     if (x_col % 3 == 0){
       x_row++;
       x_col++;
