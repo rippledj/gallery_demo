@@ -23,21 +23,21 @@
       <div id="container" class="container">
 
         <!-- User Headmat -->
-        <div class="row headmat">
+        <div id="headmat" class="row headmat">
           <div class="col-xs-3">
-            <img class="user-avatar" src="images/profile.jpeg">
+            <img id="avatar" class="user-avatar" src="">
           </div>
           <div class="col-xs-6">
-            <h1>Nick Reynolds</h1>
+            <h1 id="name"></h1>
             <h2>Bio</h2>
-            <p class="user-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi sed massa viverra pellentesque. Nulla ornare vulputate ligula in tempus. Nunc pellentesque nibh a ex eleifend pulvinar. Quisque bibendum ipsum ut mauris malesuada, sit amet mollis turpis viverra.<p>
+            <p id="bio" class="user-description"><p>
           </div>
-          <div class="col-xs-3">
+          <div id="contact" class="col-xs-3">
             <div class="contact">
               <h2>Phone</h2>
-              <a href="tel:555-555-5555">555-555-5555</a>
+              <a id="phone" href="tel:555-555-5555"></a>
               <h2>Email</h2>
-              <a href="mailto:nick.reynolds@domain.ca">nick.reynolds@domain.ca</a>
+              <a id="email"href="mailto:nick.reynolds@domain.ca"></a>
             </div>
           </div>
         </div>

@@ -17,8 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 // Handle the API request for /galler
 Route::get("/user", function(){
-  $results = DB::select('select * from user_data where id = :id', ['id' => 1]);
-  var_dump($results);
+  $results = DB::select('select * from user_data where user_id = :user_id', ['user_id' => 1]);
   $results = base64_encode(json_encode($results));
   return $results;
 
@@ -26,8 +25,8 @@ Route::get("/user", function(){
 
 // Handle the API request for /galler
 Route::get("/gallery", function(){
-  $results = DB::select('select * from photos where user_id = :id', ['id' => 1]);
-  $results = json_encode($results);
+  $results = DB::select('select * from photos where user_id = :user_id', ['user_id' => 1]);
+  $results = base64_encode(json_encode($results));
   file_put_contents(__DIR__ . "/../resources/demo_files/response.json", $results);
   return $results;
 

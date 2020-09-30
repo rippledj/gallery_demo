@@ -78,8 +78,16 @@ function modifyPhotosDOM(content){
 // Accepts the response array and modifies the content
 // in the DOM
 function modifyUserDOM(content){
-  for(item in content){
-  }
+  var name = document.getElementById("name");
+  name.innerHTML = content.name;
+  var bio = document.getElementById("bio");
+  bio.innerHTML = content.bio;
+  var phone = document.getElementById("phone");
+  phone.innerHTML = content.phone;
+  var email = document.getElementById("email");
+  email.innerHTML = content.email;
+  var avatar = document.getElementById("avatar");
+  avatar.src = "http://localhost/" + content.avatar;
 }
 
 // Makes Asyncronous call to API
@@ -96,11 +104,25 @@ return new Promise(function(resolve, reject) {
 }
 
 // Call the photo gallery API and wait for response
+ajax("api/user")
+.then(function(response) {
+  // Decode JSON response
+  // Decode the lesson base64 and JSON
+  var content = JSON.parse(atob(response));
+  // Code depending on result
+  modifyUserDOM(content[0]);
+})
+.catch(function() {
+  // An error occurred
+  alert("Error!")
+});
+
+// Call the photo gallery API and wait for response
 ajax("api/gallery")
 .then(function(response) {
   // Decode JSON response
   // Decode the lesson base64 and JSON
-  var content = JSON.parse(response);
+  var content = JSON.parse(atob(response));
   // Code depending on result
   modifyPhotosDOM(content);
 })
